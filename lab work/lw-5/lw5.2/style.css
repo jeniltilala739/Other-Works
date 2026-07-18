@@ -1,0 +1,26 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: #d1d1d1;
+    padding: 30px;
+    width: 400px;
+    border: 1px solid #999;
+}
+
+mark {
+    background-color: yellow;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; margin-top: 20px; }
+
+ul {
+    padding-left: 20px;
+}
