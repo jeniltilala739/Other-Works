@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart Header</title>
+    <!-- Bootstrap Icons for Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #ffffff;
+            border: 2px solid #333;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            padding: 6px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #6c757d;
+        }
+
+        .top-bar select {
+            border: none;
+            background: transparent;
+            color: #6c757d;
+            font-size: 12px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        /* Middle Main Header */
+        .main-header {
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #001e00;
+            text-decoration: none;
+        }
+
+        .logo i {
+            color: #198754;
+            font-size: 28px;
+        }
+
+        .search-box {
+            flex: 1;
+            max-width: 500px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 40px 10px 15px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .search-box i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6c757d;
+            cursor: pointer;
+        }
+
+        .location-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #495057;
+            cursor: pointer;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .action-icon {
+            position: relative;
+            color: #212529;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .action-icon .badge {
+            position: absolute;
+            top: -6px;
+            right: -8px;
+            background-color: #198754;
+            color: white;
+            font-size: 10px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* Bottom Nav */
+        .bottom-nav {
+            padding: 10px 40px;
+            border-top: 1px solid #e9ecef;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .dept-btn {
+            background-color: #198754;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            border: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #212529;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .nav-links a:hover {
+            color: #198754;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Top Announcement Bar -->
+        <div class="top-bar">
+            <span>Super Value Deals - Save more with coupons</span>
+            <div>
+                <select>
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Main Header Bar -->
+        <div class="main-header">
+            <!-- Brand Logo -->
+            <a href="#" class="logo">
+                <i class="bi bi-cart3"></i>
+                FreshCart
+            </a>
+
+            <!-- Search Input -->
+            <div class="search-box">
+                <input type="text" placeholder="Search for products">
+                <i class="bi bi-search"></i>
+            </div>
+
+            <!-- Location Selector -->
+            <div class="location-badge">
+                <i class="bi bi-geo-alt"></i>
+                <span>Location / 560001</span>
+            </div>
+
+            <!-- Action Icons (Wishlist, Profile, Cart) -->
+            <div class="header-actions">
+                <a href="#" class="action-icon">
+                    <i class="bi bi-heart"></i>
+                    <span class="badge">5</span>
+                </a>
+                <a href="#" class="action-icon">
+                    <i class="bi bi-person"></i>
+                </a>
+                <a href="#" class="action-icon">
+                    <i class="bi bi-bag"></i>
+                    <span class="badge">1</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation Links -->
+        <div class="bottom-nav">
+            <button class="dept-btn">
+                <i class="bi bi-grid-fill"></i>
+                All Departments
+                <i class="bi bi-chevron-down" style="margin-left: auto;"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#">Home <i class="bi bi-chevron-down"></i></a></li>
+                <li><a href="#">Shop <i class="bi bi-chevron-down"></i></a></li>
+                <li><a href="#">Stores <i class="bi bi-chevron-down"></i></a></li>
+                <li><a href="#">Mega menu <i class="bi bi-chevron-down"></i></a></li>
+                <li><a href="#">Pages <i class="bi bi-chevron-down"></i></a></li>
+                <li><a href="#">Account <i class="bi bi-chevron-down"></i></a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Docs</a></li>
+            </ul>
+        </div>
+    </header>
+
+</body>
+</html>
